@@ -13,21 +13,140 @@
 
 
     <body>
-        <header>
-            <nav>
+        <div id="grid-container">
+            <header>
+                <nav>
+                    <div class="icon-placement">
+                    <ul class="ikoner1">
+                        <li><a href="index.html"><i class="fa-solid fa-bars" style="color: #ccc5b9;"></i></a></li>
+                        <li><a href="index.html"><i class="fa-solid fa-magnifying-glass" style="color: #ccc5b9;"></i></a></li>
+                    </ul>
+        
+                    <a href="index.html" class="logo">SOLEMATE</a>
+        
+                    <ul class="ikoner2">
+                        <li><a href="index.html"><i class="fa-solid fa-user" style="color: #ccc5b9;"></i></a></li>
+                        <li><a href="index.html"><i class="fa-solid fa-heart" style="color: #ccc5b9;"></i></a></li>
+                        <li><a href="index.html"><i class="fa-solid fa-basket-shopping" style="color: #ccc5b9;"></i></a></li>
+                    </ul>
+                    </div>
+                </nav>
+            </header>
 
-            </nav>
-        </header>
+            <main>
+                <section>
+                        <h2><img src="img/logoikon.jpg" alt="Et ikon som viser en joggesko" class="bilde-logo"></h2>
+                </section>
+        
+                <div class="brodsti">
+                <a href="index.html">Hjem ></a>
+                <a href="analyse.html">Analyse</a>
+                </div>
+                
+        
+                <section id="analyse-nettsted">
+                <h1>ANALYSE AV NETTSTED</h1>
+                </section>
 
-        <main>
-            
+                <section>
+                    <article>
+                        <h2>Google Trends søkeordanalyse</h2>
+                        <img src="img/google_trends.jpg" alt="Skjermbilde av Google-trends søkeord-analyse">
+                        <img src="img/trends_tid.jpg" alt="Skjermbilde av Google-trends søkeord-analyse over tid">
+                        <p>Jeg har valgt å bruke ordene "sneakers", "fritidssko" og "joggesko" i min søkeordsanalyse. Det kommer frem fra analysen 
+                        at det ville vært mest hensiktsmessig benytte seg av "sneakers", da dette er det mest brukte ordet i søk på Google basert på
+                        valgt region, Østfold. Det er også det ordet som har hatt en jevn økning i søk de siste 5 årene.</p>
+                    </article>
+
+
+                    <article>
+                        <h2>Lighthouse-rapport av SEO-analyse</h2>
+                        <h3>Forside</h3>
+                        <img src="img/SEO_forside_begge.jpg" alt="Skjermbilde av SEO-analyse av forsiden">
+                        <h3>Produktside</h3>
+                        <img src="img/SEO_produkt_begge.jpg" alt="Skjermbilde av SEO-analyse av produktside">
+                        <h3>Kundeservice</h3>
+                        <img src="img/SEO_kundeservice_begge.jpg" alt="Skjermbilde av SEO-analyse av kundeservice-side">
+                        <p>Dette er resultatene av SEO-analyse ved hjelp av Lighthouse. Jeg fikk de samme resultatene på både desktop og mobil,
+                            og valgte derfor og kun legge med et skjermbilde fra hver side. En feil jeg ser går igjen på alle sider er at det mangler meta-tags. 
+                            En annen feil er dette med størrelse på linker/ikoner på mobilversjon. Dette gjør at brukeren kan bli nødt til å zoome inn dersom hen besøker nettstedet
+                            mitt på en mobil, og dette kommer jeg til å endre på ved og f.eks legge på padding. Google-crawlere vil også ha problemer med å finne frem til nettstedet mitt,
+                            dette vil jeg også forsøke å forbedre.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h2>Lighthouse-rapport av UU-analyse</h2>
+                        <h3>Forside</h3>
+                        <img src="img/UU_forside_begge.jpg" alt="Skjermbilde av UU-analyse av forsiden">
+                        <h3>Produktside</h3>
+                        <img src="img/UU_produkt_begge.jpg" alt="Skjermbilde av UU-analyse av produktside">
+                        <h3>Kundeservice</h3>
+                        <img src="img/UU_kundeservice_begge.jpg" alt="Skjermbilde av UU-analyse av kundeservice-side">
+                        <p>Dette er resultatene av UU-analysen ved hjelp av Lighthouse. Her har jeg gjort det samme som i SEO-analysen og latt ét skjermbilde
+                            representere både desktop og mobil, da jeg har fått samme resultater. Jeg ser jeg må endre på noen farger da jeg har fått en kontrastfeil som kan gjøre 
+                            nettstedet mitt vanskelig å lese. En annen feil som går igjen er at ikonene mine mangler beskrivelse. Dette er noe jeg kan legge til for å øke brukeroppelvelsen 
+                            for personer som bruker skjermoppleserverktøy. Det tredje jeg bør endre er den semantiske strukturen på nettstedet. For eksempel å bruke h-tager i stigende rekkefølge.
+                        </p>
+                    </article>
+
+
+                    <article>
+                        <h2>UU-analyse via Webaim</h2>
+                        <h3>Forside</h3>
+                        <img src="img/webaim_forside.jpg" alt="Skjermbilde av UU-analyse av forsiden">
+                        <h3>Produktside</h3>
+                        <img src="img/webaim_produkt.jpg" alt="Skjermbilde av UU-analyse av produktside">
+                        <h3>Kundeservice</h3>
+                        <img src="img/webaim_kundeservice.jpg" alt="Skjermbilde av UU-analyse av kundeservice-side">
+                        <p>Dette er resultatene av UU-analysen ved hjelp av Webaim. Utifra analysen ser jeg at de samme feilene går igjen på alle sidene, 
+                            men i varierende omfang. Empty links indikerer at ikonene mine mangler tekst, som er den samme feilen som beskrevet
+                            i Lighthouse-rapporten. Contrast Error indikerer at jeg har for lav kontrast på noen av fargene mine, som også er den samme feilen som beskrevet tidligere.
+                            Skipped heading level, som jeg fikk som en alert på Produktside og Kundeservice, forteller at et header-nivå er hoppet over. F.eks gått rett fra h1 til h3.
+                            Redudndant link vil si at jeg har linker som peker til samme side. Dette kan fjernes.</p>
+                    </article>
+
+                </section>
+
+
+
+
+                <section>
+                    <table class="table">
+                        <caption>Sammenligning av analyse</caption>
+                        <tr>
+                            <th scope="col">Lighthouse</th>
+                            <th scope="col">Webaim</th>
+                            <th scope="col">ChatGPT</th>
+                        </tr>
+                        <tr>
+                            <td>hei</td>
+                            <td>på</td>
+                            <td>deg</td>
+
+                        </tr>
+
+                        <tr>
+                            <td>hei</td>
+                            <td>på</td>
+                            <td>deg</td>
+                        </tr>
+                    </table>
+                </section>
         </main>
 
 
         <footer>
-            <nav>
-                
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="#">OM OSS</a></li>
+                    <li><a href="kundeservice.html">KUNDESERVICE</a></li>
+                    <li><a href="#">PERSONVERN OG COOKIES</a></li>
+                    <li><a href="analyse.html">ANALYSE</a></li>
+                </ul>
             </nav>
         </footer>
+        </div>
     </body>
 </html>
