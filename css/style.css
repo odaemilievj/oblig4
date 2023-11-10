@@ -31,15 +31,6 @@ html{
         margin-top: 60px;
     }
 
-    /*Dette er tabellen*/
-.table, caption{
-    border: 2px solid;
-}
-
-.table, th, td{
-    border: 1px solid;
-    
-}
 
 
 /*CSS for alle sider*/
@@ -68,6 +59,7 @@ header{
     margin: 0px;
     text-align: center;
     font-size: 20px;
+    letter-spacing: 2px;
 }
 
 .icon-placement{
@@ -79,7 +71,6 @@ header{
 
 }
   
-
 
 .ikoner li a i{
     padding-left: 10px;
@@ -96,14 +87,15 @@ ul{
     list-style: none;
     margin: 0;
     padding: 0;
-    letter-spacing: 2px;
+
 }
 
 header nav ul{
     display: flex;
     gap: 0.5rem;
     list-style: none;
-    flex-wrap:wrap;
+    flex-wrap: wrap;
+    margin-left: 5px;
 }
 
 .bilde-logo{
@@ -112,6 +104,7 @@ header nav ul{
     display:block;
     margin:0 auto;
     margin-top: 60px;
+    margin-bottom: 30px;
 }
 
 .brodsti{
@@ -146,8 +139,9 @@ article{
     background-color: #CCC5B9;
     text-decoration: none;
     color:#FFFCF2;
-    padding: 40px;
+    padding: 15px;
     border-radius: 10px;
+    text-align: center;
   }
 
 
@@ -237,6 +231,10 @@ a{
     margin-left: 4px;
 }
 
+#str2{
+    text-align: left;
+}
+
 #produktbilde{
     height: 480px;
     width: 375px;
@@ -290,7 +288,7 @@ a{
 button{
     background-color: #ccc5b9;
     border: #403d39;
-    color: #fffcf2;
+    color: #3D2F00;
     padding: 10px;
     text-decoration: none;
     display: inline-block;
@@ -323,6 +321,32 @@ button{
     width: 100%;
     height: 100%;
 }
+
+/*Dette gjelder kun for analyse-siden*/
+.default-flex3{
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#analyse-nettsted{
+    text-align: center;
+    font-size: 20px;
+    letter-spacing: 2px;
+}
+
+
+    /*Dette er tabellen*/
+    .table, caption{
+        border: 2px solid;
+    }
+    
+    .table, th, td{
+        border: 1px solid;
+        margin: 0 auto;
+        
+    }
+
 
 /*Dette er media queries for desktop*/
 @media only screen and (min-width: 600px){
@@ -389,7 +413,7 @@ button{
         font-weight: 600;
         font-size: 30px;
         margin-left: 50px;
-        margin-right: 40px;
+        margin-right: 11px;
     }
 
     .ikoner li a{
@@ -417,6 +441,14 @@ button{
         align-self: start;
         margin-left: 20px;
       }
+
+
+    .skjermbilde{
+        width: 50%;
+        height: 50%;
+        display: block;
+        margin: 0 auto;
+    }
 
 
 }    

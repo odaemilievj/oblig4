@@ -1,20 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/icons/css/fontawesome.css" rel="stylesheet">
-    <link href="css/icons/css/brands.css" rel="stylesheet">
-    <link href="css/icons/css/solid.css" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css" type="text/css">
-    <title>Produktside</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>We will help you find your SoleMate!</title>
+        <meta name="description" content="Hvite, chunky joggesko med støtdempende såle.">
+        <meta name="author" content="SoleMate AS">
+        <link href="css/icons/css/fontawesome.css" rel="stylesheet">
+        <link href="css/icons/css/brands.css" rel="stylesheet">
+        <link href="css/icons/css/solid.css" rel="stylesheet">
+        <link rel="stylesheet" href="css/style.css" type="text/css">
+        <meta property="og:title" content="SoleMate - Fete sneakers!"/>
+        <meta property="og:description" content="Just arrived! Sjekk ut sesongens heteste trend."/>
+        <meta property="og:image" content="https://itstud.hiof.no/~oejakobs/oblig4/img/Leonardo_Diffusion.jpg"/>
+        <meta property="og:url" content="https://itstud.hiof.no/~oejakobs/oblig4/">
+    </head>
 
 <body>
-
+    <a href="#main" id="skip-to-main">Skip to main content</a>
     <div id="grid-container">
         <header>
-            <nav>
+            <nav aria-label="Hovednavigasjon">
                 <div class="icon-placement">
     
                 <a href="index.html" class="logo">SOLEMATE</a>
@@ -25,35 +31,58 @@
                     <li><a href="index.html"><i class="fa-solid fa-user" style="color: #7F6E5C;"></i>Profil</a></li>
                     <li><a href="index.html"><i class="fa-solid fa-heart" style="color: #7F6E5C;"></i>Favoritter</a></li>
                     <li><a href="index.html"><i class="fa-solid fa-basket-shopping" style="color: #7F6E5C;"></i>Handlekurv</a></li>
+                    <li><a href="analyse.html"><i class="fa-solid fa-chart-simple" style="color: #7F6E5C;"></i>Analyse</a></li>
                 </ul>
                 </div>
             </nav>
         </header>
     
-    <main>
-        <section>
-                <h2><img src="img/logoikon.jpg" alt="Et ikon som viser en joggesko" class="bilde-logo"></h2>
-        </section>
+        <main id="main-content" aria-labelledby="main-heading" itemscope itemtype="http://schema.org/Product">
+            <section>
+                <h2 id="main-heading"><img src="img/logoikon.jpg" alt="Et ikon som viser en joggesko" class="bilde-logo" itemprop="image"></h2>
+            </section>
 
-        <div class="brodsti">
-        <a href="index.html">Hjem ></a>
-        <a href="index.html">Kategori ></a>
-        <a>Produktside</a>
-        </div>
+            <div class="brodsti" itemscope itemtype="http://schema.org/BreadcrumbList">
+                <a itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" href="index.html">
+                    <span itemprop="item" itemscope itemtype="http://schema.org/WebPage" itemid="index.html">
+                        <span itemprop="name">Hjem</span>
+                    </span>
+                    <meta itemprop="position" content="1"/>
+                </a> >
+                <a itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem" href="index.html">
+                    <span itemprop="item" itemscope itemtype="http://schema.org/WebPage" itemid="index.html">
+                        <span itemprop="name">Kategori</span>
+                    </span>
+                    <meta itemprop="position" content="2"/>
+                </a> >
+                <a itemprop="itemListElement" itemscope itemtype="http://schema.org/ListItem">
+                    <span itemprop="item" itemscope itemtype="http://schema.org/WebPage">
+                        <span itemprop="name">Produktside</span>
+                    </span>
+                    <meta itemprop="position" content="3"/>
+                </a>
+            </div>
         
 
         <section id="produktnavn">
-            <h1>PRODUKTNAVN</h1>
-            </section>
-
+            <h1 itemprop="name">PRODUKTNAVN</h1>
+        </section>
+    
         <div id="flex-produkt">
-                <h2> <img src="img/Leonardo_Diffusion.jpg" alt="Et bilde av en joggesko" id="produktbilde"></h2>
-
-        <section id="flex-produkt1">
-            <section id="modell">
-            <h2>KULE SNEAKERS 1499,-</h2>
-            <p id="produkttekst">Cats are a queer kind of folk missing until dinner time while happily ignoring when being called or love and flee in terror at cucumber discovered on floor lick face hiss at owner, pee a lot, and meow repeatedly scratch at fence purrrrrr.</p>
-            </section>
+            <h2> <img src="img/Leonardo_Diffusion.jpg" alt="Et bilde av en joggesko" id="produktbilde" itemprop="image"></h2>
+        
+            <section id="flex-produkt1">
+                <section id="modell">
+                    <h2>KULE SNEAKERS</h2>
+                    <h2 itemprop="offers" itemscope itemtype="http://schema.org/Offer">
+                        <span itemprop="price">1499</span>
+                        <meta itemprop="priceCurrency" content="NOK"/>,-
+                        <meta itemprop="priceValidUntil" content="2023-12-31"/>
+                        <link itemprop="availability" href="http://schema.org/InStock"/>In stock
+                    </h2>
+                    <p id="produkttekst" itemprop="description">Cats are a queer kind of folk missing until dinner time while happily ignoring when being called or love and flee in terror at cucumber discovered on floor lick face hiss at owner, 
+                        pee a lot, and meow repeatedly scratch at fence purrrrrr.</p>
+                </section>
 
             <section id="produktdetaljer">
             <h2>PRODUKTDETALJER</h2>
@@ -62,28 +91,21 @@
 
             <section id="str">
                 <h2>STØRRELSER</h2>
-    
-                    <h4 class="str2">
                     <button>36</button>
                     <button>37</button>
                     <button>38</button>
                     <button>39</button>
                     <button>40</button>
-                    <button>41</button></h4>
+                    <button>41</button>
             </section>
 
             <section id="kjøpknapp">
-                <button>Kjøp</button>
+                <button itemprop="url">Kjøp</button>
                 <button>Klikk & hent</button>
             </section>
-
-
         </section> 
-            </div>
-
-
-
-    </main>
+    </div>
+</main>
 
     <footer>
         <nav class="nav-footer">
